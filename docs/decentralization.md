@@ -23,6 +23,15 @@ The permission system of [Antelope](https://antelope.io) is impressive!
 - [Voter](./roles.md#voter) MultiSig responsibility would be to:
     - control a custom permission (child of active key of [nftwatch](https://www.protonscan.io/account/nftwatch)) that is allowed to approve an NFT collection to get shielded
 
+### Oracles
+
+In order to perform various checks, NFT Watch DAO should consider to rely on trusted oracles.
+
+The oracles could support Guards by automating tasks to determine if:
+
+- an NFT collection passes the [Basic Check](./shielding.md#basic-check)
+- an account is eligible to become a [Voter](./roles.md#voter)
+
 ### Shielding Expiration
 
 It might make sense to let shielding expire because it is likely that NFT collections lose support from the community. A new shielding vote to keep the shield could be automatically triggered e.g. every 3 months and if it does not pass, the shield will be removed.
