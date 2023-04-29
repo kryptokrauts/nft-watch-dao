@@ -1,0 +1,53 @@
+site_name: NFT Watch DAO
+plugins:
+  - search
+repo_url: 'https://github.com/kryptokrauts/nft-watch-dao'
+edit_uri: 'https://github.com/kryptokrauts/nft-watch-dao'
+
+theme:
+  icon:
+    logo: material/shield
+  name: material
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.tabs.link
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - index.md
+  - code-of-conduct.md
+  - roles.md
+  - role-assignment.md
+  - shielding.md
+  - blacklisting.md
+  - decentralization.md
+  - faq.md
+  - disclaimer.md
