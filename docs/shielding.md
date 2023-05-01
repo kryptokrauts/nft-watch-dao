@@ -32,16 +32,32 @@ Any community member can propose an NFT collection to be shielded in the by crea
 
 ### 2.1 Basic Check
 
-A [Guard](./roles.md#guard) will perform a basic check on the proposed NFT collection. Only if the Basic Check is passed, the Guard will open a shielding vote for the NFT collection.
+The [Guards](./roles.md#guard) will perform a basic check on the proposed NFT collection. Only if the Basic Check is passed, the [Guards](./roles.md#guard) will open a shielding vote for the NFT collection.
+
+#### Exceptions & Special treatments
+
+There exist cases where the general Basic Check requirements cannot be applied, but the NFT collection can and should still be considered to receive a shield:
+
+1. "Official" NFT collections where it is likely, that scammers try to create copies and trick the community. A prominent example for this are [Proton DEX Keys](https://soon.market/collections/353512453544), where scammers unfortunately were able to collect funds before shielding existed.
+1. NFT collections that are closely related to already shielded NFT collections. Few examples:
+    - Secondary NFT collections that provide utility such as discounts, requests for custom creations, ...
+    - NFT collections that have been distributed as an airdrop for an NFT collection that has already been shielded.
+
+*Note: It is upon the [Guards](./roles.md#guard) to decide, if an NFT collection falls under this category. If the [Guards](./roles.md#guard) agree, they start a Shielding Vote as usual.*
 
 ### 2.2 Yellow Tier Vote (if required)
 
-In some cases, even if the Basic Check passes, a Yellow Tier Vote is required. If the NFT collection seems to be a knock-off of an existing NFT collection, the NFT Watch DAO [Voters](./roles.md#voter) first need to determine whether the NFT collection should get the chance to get shielded or not.
+In some cases, even if the Basic Check passes, a Yellow Tier Vote is required. If conflicts with NFT collections such as IP issues or other controversal grey area issues like knock-offs are assumed, a Yellow Tier Vote will be opened to determine whether the NFT collection should get the chance to get shielded or not.
+
+[Learn more about knock-offs](./faq.md#what-is-the-difference-between-copy-paste-scams-and-knock-off-assumptions-why-are-they-treated-differently-how-does-nft-watch-dao-make-the-determination) in the FAQ.
 
 *Note:*
 
+- *If the Yellow Tier Vote is successful, the [Guards](./roles.md#guard) will open a Shielding Vote right after.*
+- *If the Yellow Tier Vote fails, the [Guards](./roles.md#guard) will put the NFT collection directly in to the blacklist!*
+- *If the Yellow Tier Vote doesn't receive the required participation rate, nothing happens and the NFT collection can be proposed to get shielded again after 1 month.*
+- *No matter about the outcome of the Yellow Tier Vote, the NFT collection will receive a Yellow Tier Flag from [Guards](./roles.md#guard) with a text that describes the assumed IP issue or other grey area issue.*
 - *Currently, the Yellow Tier Vote is anonymous, open for 1 week and its result is based on majority of at least 21 participants. In case there are less than 21 participants, the Shielding Process will be considered as a fail and the NFT collection can again be proposed for shielding after a period of 1 month.*
-- *[Learn more](faq.md#what-is-the-difference-between-copy-paste-scams-and-knock-off-assumptions-why-are-they-treated-differently-how-does-nft-watch-dao-make-the-determination) about knock-offs in the FAQ*
 
 ### 3. Shielding Vote
 

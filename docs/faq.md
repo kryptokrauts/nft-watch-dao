@@ -14,7 +14,7 @@ Copy paste scams are clear blatant rip-offs of other images or NFT collections t
 
 Assumed knock-offs are generally very close to the original source material but are altered to fool investors into thinking it is genuine. NFT Watch DAO check lines, shading, angles and pixel alignment to determine whether or not a project has been ripped off opposed to a knock-off.
 
-As most knock-off NFT collections are assumed without direct concrete proof, [Voters](./roles.md#voter) decide on this determination. For rip-off scams, [Guards](./roles.md#guard) are able to make immediate determination and put the NFT collection on the blacklist.
+As most knock-off NFT collections are assumed without direct concrete proof, [Voters](./roles.md#voter) decide on this determination. For rip-off scams, [Guards](./roles.md#guard) will make immediate determination and put the NFT collection on the blacklist.
 
 ## Can the shield be removed from an NFT collection?
 

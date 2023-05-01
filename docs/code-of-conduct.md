@@ -13,10 +13,10 @@
 
 ## How to detect violations?
 
-- Use image scans, such as [Google Lens](https://lens.google) and [aiRight](https://airight.io).
+- Use image scans, such as [Google Lens](https://lens.google) and [aiRight](https://airight.io) to scan the NFTs and its traits.
 - Identify red flags on social media, such as new accounts, suspicious activity, etc.
 - Be vigilant of stolen material when browsing other blockchains and NFT markets.
 
 ## Violation detected?
 
-If an NFT collection violates this Code of Conduct, every [Scout](./roles.md#scout) is encouraged to report the NFT collection.
+If an NFT collection violates this Code of Conduct, every [Scout](./roles.md#scout) is encouraged to report the NFT collection and provide adequate evidence.

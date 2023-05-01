@@ -12,19 +12,29 @@ Any community member can report an NFT collection that potentially violates the 
 
 A [Guard](./roles.md#guard) will perform a check on the reported NFT collection:
 
-- if the NFT collection is a clear rip-off, it [Guards](./roles.md#guard) will put the NFT collection on the blacklist
-- if the NFT collection is assumed to be a knock-off, a Yellow Tier Vote will be opened by the [Guards](./roles.md#guard) to decide whether the NFT collection will be blacklisted or not
-- if no violation is detected, no action will be taken
+- If the NFT collection is a clear rip-off, it [Guards](./roles.md#guard) will put the NFT collection on the blacklist.
+- If the NFT collection is assumed to be a knock-off, a Yellow Tier Vote will be opened by the [Guards](./roles.md#guard) to decide whether the NFT collection will be blacklisted or not.
+- If no violation is detected, the information will be announced and no action will be taken.
 
 ### 2.2 Yellow Tier Vote (if required)
 
-If the reported NFT collection is considered to be a knock-off, a Yellow Tier Vote will be opened. The NFT Watch DAO [Voters](./roles.md#voter) will determine whether the NFT collection should will be blacklisted or not.
+If conflicts with NFT collections such as IP issues or other controversal grey area issues are assumed, a Yellow Tier Vote will be opened. The NFT Watch DAO [Voters](./roles.md#voter) will determine whether the NFT collection should will be blacklisted or not.
 
+**Example:**
+
+1. A knock-off from an existing NFT collection on another blockchain is assumed.
+1. Before blacklisting the NFT collection, a Yellor Tier Vote will be opened by the [Guards](./roles.md#guard).
+1. The [Voters](./roles.md#voter) state their opinion about the case and take the decision which will be applied.
+
+[Learn more about knock-offs](faq.md#what-is-the-difference-between-copy-paste-scams-and-knock-off-assumptions-why-are-they-treated-differently-how-does-nft-watch-dao-make-the-determination) in the FAQ.
+ 
 *Note:*
 
-- *Currently, the Yellow Tier Vote is anonymous, open for 1 week and its result is based on majority of at least 21 participants. In case there are less than 21 participants, the NFT collection won't be blacklisted*
-- *[Learn more](faq.md#what-is-the-difference-between-copy-paste-scams-and-knock-off-assumptions-why-are-they-treated-differently-how-does-nft-watch-dao-make-the-determination) about knock-offs in the FAQ*
+- *If the Yellow Tier Vote doesn't receive the required participation rate, nothing happens and the NFT collection can be proposed to get shielded again after 1 month.*
+- *No matter about the outcome of the Yellow Tier Vote, the NFT collection will receive a Yellow Tier Flag from [Guards](./roles.md#guard) with a text that describes the assumed IP issue or other grey area issue.*
+- *Currently, the Yellow Tier Vote is anonymous, open for 1 week and its result is based on majority of at least 21 participants. In case there are less than 21 participants, the NFT collection won't be blacklisted.*
+- *Yellow Tier Votes are providing the NFT Watch DAO benchmarks of what the community deams acceptable.*
 
 ### 3. Blacklisting
 
-In case off a rip-off (determined by Guards) or a knock-off (confirmed by Voters), the NFT collection will be added to the blacklist.
+In case off a clear rip-off (determined by Guards) or a knock-off / other grey area issue (confirmed by Voters), the NFT collection will be added to the blacklist.
