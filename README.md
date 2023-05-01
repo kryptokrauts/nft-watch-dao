@@ -9,3 +9,8 @@ In November 2022, a scammer was able to trick some community members and hosted 
 Currently, the shielding and blacklisting process is governed in the official Soon.Market [Discord](https://discord.gg/KtVVaYy6b3).
 
 This repository contains content that explains in detail how NFT Watch is governed. Additionally, various diagrams within the repository serve as a basis of discussion before the decentralized application for NFT Watch will be developed.
+
+## Get Involved / Ask Questions!
+
+- [Discord](https://discord.gg/KtVVaYy6b3) (`#nft-watch-discussion`)
+- [Telegram](https://t.me/protonnftwatch)
