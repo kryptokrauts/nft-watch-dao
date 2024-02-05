@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../shielding/">
+        <link rel="prev" href="../code-of-conduct/">
       
       
-        <link rel="next" href="../decentralization/">
+        <link rel="next" href="../shielding/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
@@ -270,51 +270,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../roles/" class="md-nav__link">
-        Roles
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../role-assignment/" class="md-nav__link">
-        Role Assignment
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../shielding/" class="md-nav__link">
-        Shielding
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -366,22 +321,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#21-guard-check" class="md-nav__link">
-    2.1 Guard Check
+  <a href="#2-guard-review" class="md-nav__link">
+    2. Guard Review
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-yellow-tier-vote-if-required" class="md-nav__link">
-    2.2 Yellow Tier Vote (if required)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-blacklisting" class="md-nav__link">
-    3. Blacklisting
+  <a href="#3-blacklisting-rejection" class="md-nav__link">
+    3. Blacklisting / Rejection
   </a>
   
 </li>
@@ -407,8 +355,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../decentralization/" class="md-nav__link">
-        Decentralization
+      <a href="../shielding/" class="md-nav__link">
+        Shielding
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smart-contract/" class="md-nav__link">
+        Smart Contract
       </a>
     </li>
   
@@ -486,22 +449,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#21-guard-check" class="md-nav__link">
-    2.1 Guard Check
+  <a href="#2-guard-review" class="md-nav__link">
+    2. Guard Review
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-yellow-tier-vote-if-required" class="md-nav__link">
-    2.2 Yellow Tier Vote (if required)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-blacklisting" class="md-nav__link">
-    3. Blacklisting
+  <a href="#3-blacklisting-rejection" class="md-nav__link">
+    3. Blacklisting / Rejection
   </a>
   
 </li>
@@ -530,35 +486,22 @@
 
 
 <h1 id="blacklisting">Blacklisting</h1>
-<p>In general, all NFT collections that violate the <a href="../code-of-conduct/">Code of Conduct</a> are considered to be blacklisted.</p>
 <h2 id="how-does-the-blacklisting-process-look-like">How does the blacklisting process look like?</h2>
 <h3 id="1-report">1. Report</h3>
-<p>Any community member can report an NFT collection that potentially violates the <a href="../code-of-conduct/">Code of Conduct</a> by reporting it in the <code>#🚩︱blacklist-report</code> channel on the Soon.Market <a href="https://discord.gg/KtVVaYy6b3">Discord</a>.</p>
-<h3 id="21-guard-check">2.1 Guard Check</h3>
-<p>A <a href="../roles/#guard">Guard</a> will perform a check on the reported NFT collection:</p>
+<p>Any community member can report an NFT collection that potentially violates the <a href="../code-of-conduct/">Code of Conduct</a> by calling the <a href="https://explorer.xprnetwork.org/account/nftwatchdao?loadContract=true&amp;tab=Actions&amp;account=nftwatchdao&amp;scope=nftwatchdao&amp;limit=100&amp;table=globals&amp;action=report"><code>report</code></a>-action on the <a href="../smart-contract/#public">Smart Contract</a>. This can be done directly via the explorer interface or via some independent UI, e.g. the interface of an NFT marketplace that utilizes NFT Watch DAO.</p>
+<h3 id="2-guard-review">2. Guard Review</h3>
+<p>One of the <a href="../guards/">Guards</a> will perform a check on the reported NFT collection:</p>
 <ul>
-<li>If the NFT collection is a clear rip-off, it <a href="../roles/#guard">Guards</a> will put the NFT collection on the blacklist.</li>
-<li>If the NFT collection is assumed to be a knock-off, a Yellow Tier Vote will be opened by the <a href="../roles/#guard">Guards</a> to decide whether the NFT collection will be blacklisted or not.</li>
-<li>If no violation is detected, the information will be announced and no action will be taken.</li>
+<li>If the NFT collection is a clear rip-off, <a href="../guards/">Guards</a> will confirm to put the NFT collection on the blacklist.</li>
+<li>If the NFT collection is assumed to be a knock-off, <a href="../guards/">Guards</a> will try to reach out to the creator or the team behind an NFT collection before taking a decision. This applies for NFT collections where IP issues or other controversal grey area issues are assumed.</li>
+<li>If no violation is detected, the report will be rejected by and no action will be taken.</li>
 </ul>
-<h3 id="22-yellow-tier-vote-if-required">2.2 Yellow Tier Vote (if required)</h3>
-<p>If conflicts with NFT collections such as IP issues or other controversal grey area issues are assumed, a Yellow Tier Vote will be opened. The NFT Watch DAO <a href="../roles/#voter">Voters</a> will determine whether the NFT collection should will be blacklisted or not.</p>
-<p><strong>Example:</strong></p>
-<ol>
-<li>A knock-off from an existing NFT collection on another blockchain is assumed.</li>
-<li>Before blacklisting the NFT collection, a Yellor Tier Vote will be opened by the <a href="../roles/#guard">Guards</a>.</li>
-<li>The <a href="../roles/#voter">Voters</a> state their opinion about the case and take the decision which will be applied.</li>
-</ol>
-<p><a href="../faq/#what-is-the-difference-between-copy-paste-scams-and-knock-off-assumptions-why-are-they-treated-differently-how-does-nft-watch-dao-make-the-determination">Learn more about knock-offs</a> in the FAQ.</p>
-<p><em>Note:</em></p>
+<p>Learn more about knock-offs in the <a href="../faq/#what-is-the-difference-between-copy-paste-scams-and-knock-off-assumptions-why-are-they-treated-differently-how-does-nft-watch-dao-make-the-determination">FAQ</a>.</p>
+<h3 id="3-blacklisting-rejection">3. Blacklisting / Rejection</h3>
 <ul>
-<li><em>If the Yellow Tier Vote doesn't receive the required participation rate, nothing happens and the NFT collection can be proposed to get shielded again after 1 month.</em></li>
-<li><em>No matter about the outcome of the Yellow Tier Vote, the NFT collection will receive a Yellow Tier Flag from <a href="../roles/#guard">Guards</a> with a text that describes the assumed IP issue or other grey area issue.</em></li>
-<li><em>Currently, the Yellow Tier Vote is anonymous, open for 1 week and its result is based on majority of at least 21 participants. In case there are less than 21 participants, the NFT collection won't be blacklisted.</em></li>
-<li><em>Yellow Tier Votes are providing the NFT Watch DAO benchmarks of what the community deams acceptable.</em></li>
+<li>In case of blacklisting, a new entry will be added to the <a href="https://explorer.xprnetwork.org/account/nftwatchdao?loadContract=true&amp;tab=Tables&amp;account=nftwatchdao&amp;scope=nftwatchdao&amp;limit=100&amp;table=blacklist"><code>blacklist</code></a>-table and the contract will log this action.</li>
+<li>In case of rejection, the report will be deleted and the rejection will only be logged by the contract.</li>
 </ul>
-<h3 id="3-blacklisting">3. Blacklisting</h3>
-<p>In case off a clear rip-off (determined by Guards) or a knock-off / other grey area issue (confirmed by Voters), the NFT collection will be added to the blacklist.</p>
 
 
 
