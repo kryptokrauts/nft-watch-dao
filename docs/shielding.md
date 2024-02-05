@@ -1,70 +1,74 @@
 # Shielding
 
-## What is the purpose of shielding?
+## Purpose of Shielding
 
 By handing out the shield, NFT Watch DAO confirms that an NFT collection:
 
 - is NOT violating the [Code of Conduct](./code-of-conduct.md)
 - passes the [Basic Check](./shielding.md#basic-check)
-- has enough supporters in the community
-    - projects / teams as well as individuals interested in an NFT collection need to convince other community members with the [Voter](./roles.md#voter) role to upvote on a shielding proposal of their NFT collection
 
 *Note: Shielding is only targeting NFT collections, not individual accounts!*
 
+## Shielding Fee
+As the shielding process requires some effort from the [Guards](guards.md) to perform the Basic Check and to create a report according to the [Report Template](https://docs.google.com/spreadsheets/d/1iSVNuCF7yMAfQfR6yZ1VLHVxWM6PFCtaySH5Nf34rRw/edit#gid=0), NFT Watch DAO charges a fee of currently `12500.0000 XPR` for shielding.
+
+In order to encourage different NFT marketplaces to utilize shielding, the NFT marketplace where the shielding request has been submitted, will also get a small compensation.
+
+Currently, the fee distribution is defined as follows:
+
+- 50% Guard that performs the review and creats the shielding report
+- 40% NFT Watch DAO
+- 10% NFT Marketplace where the shielding request has been submitted
+
+The fee as well as the percentage based distribution are defined in the [globals](https://explorer.xprnetwork.org/account/nftwatchdao?loadContract=true&tab=Tables&account=nftwatchdao&scope=nftwatchdao&limit=100&table=globals)-table of the [Smart Contract](./smart-contract.md). Both can be adjusted anytime by the admins of the [nftwatchdao](https://explorer.xprnetwork.org/account/nftwatchdao) account via MultiSig proposal.
+
 ## Basic Check
 
-Before a [Guard](./roles.md#guard) starts a vote for an NFT collection to get shielded, the collection needs to pass the basic check.
+The [Guards](./guards.md) will usually only shield NFT collections that pass the basic check requirements
 
 ### Requirements
 
-An NFT collection needs to meet following requirements :
+An NFT collection needs to meet following requirements:
 
 - age of first mint > 1 month
 - min. 25 unique NFTs
-- min. 10 unique holders (excluding accounts like `atomicmarket`, `token.burn`, ...)
-- min. 10 unique buyers (only holders that bought an NFT are counted)
+- min. 10 unique buyers (transfers/airdrops are not counted)
 
 ## How does the shielding process look like?
 
-### 1. Proposal submission
+### 1. Request Shielding
 
-Any community member can propose an NFT collection to be shielded in the by creating a post in the `#🛡︱shielding-proposal ` channel on the Soon.Market [Discord](https://discord.gg/KtVVaYy6b3).
+#### Providing the Shielding Fee
+The exact shielding fee of currently `12500.0000 XPR` needs to be sent by the requester to the nftwatchdao account ***upfront*** with the memo `shielding`.
 
-### 2.1 Basic Check
+*Note: The token transfer action with the memo can be included in the same transaction. An NFT marketplace can propose such transaction accordingly.*
 
-The [Guards](./roles.md#guard) will perform a basic check on the proposed NFT collection. Only if the Basic Check is passed, the [Guards](./roles.md#guard) will open a shielding vote for the NFT collection.
+#### Calling the `reqshielding` action
+Any community member request an NFT collection to be shielded by calling the [`reqshielding`](https://explorer.xprnetwork.org/account/nftwatchdao?loadContract=true&tab=Actions&account=nftwatchdao&scope=nftwatchdao&limit=100&action=reqshielding) action on the [Smart Contract](./smart-contract.md#public). This can be done directly via the explorer interface or via some independent UI, e.g. the interface of an NFT marketplace that utilizes NFT Watch DAO.
 
-#### Exceptions & Special treatments
+#### Skipping the Basic Check (Exceptions & Special Treatments)
+In certain edge cases you might want to skip the Basic Check. In such cases you should consult with the [Guards](./guards.md) before doing so.
 
-There exist cases where the general Basic Check requirements cannot be applied, but the NFT collection can and should still be considered to receive a shield:
+Potential cases, where skipping is possible:
 
-1. "Official" NFT collections where it is likely, that scammers try to create copies and trick the community. A prominent example for this are [Proton DEX Keys](https://soon.market/collections/353512453544), where scammers unfortunately were able to collect funds before shielding existed.
-1. NFT collections that are closely related to already shielded NFT collections. Few examples:
+- NFT collections of creators that already have another shielded NFT collection.
+- NFT collections that are closely related to already shielded NFT collections, e.g.:
     - Secondary NFT collections that provide utility such as discounts, requests for custom creations, ...
     - NFT collections that have been distributed as an airdrop for an NFT collection that has already been shielded.
+- NFT collections that might be attractive for scammers to be copied. A prominent example for this case are the [Proton DEX Keys](https://soon.market/collections/353512453544), where scammers unfortunately were able to collect funds of some community members before shielding existed.
 
-*Note: It is upon the [Guards](./roles.md#guard) to decide, if an NFT collection falls under this category. If the [Guards](./roles.md#guard) agree, they start a Shielding Vote as usual.*
+*Note: Guards might also be willing to add the shield to such collections directly, without the need for a shielding request.*
 
-### 2.2 Yellow Tier Vote (if required)
+### 2. Review (Basic Check & Report Creation) 
 
-In some cases, even if the Basic Check passes, a Yellow Tier Vote is required. If conflicts with NFT collections such as IP issues or other controversal grey area issues like knock-offs are assumed, a Yellow Tier Vote will be opened to determine whether the NFT collection should get the chance to get shielded or not.
+One of the [Guards](./guards.md) will:
 
-[Learn more about knock-offs](./faq.md#what-is-the-difference-between-copy-paste-scams-and-knock-off-assumptions-why-are-they-treated-differently-how-does-nft-watch-dao-make-the-determination) in the FAQ.
+1. Perform a Basic Check on the proposed NFT collection
+1. Create a report according to the [Report Template](https://docs.google.com/spreadsheets/d/1iSVNuCF7yMAfQfR6yZ1VLHVxWM6PFCtaySH5Nf34rRw/edit#gid=0)
+1. Publish the report (Google Drive + IPFS)
+1. Confirm/Reject the shielding request by providing the IPFS Hash/CID of the published report to make it verifiable and to ensure it is tamper proof
 
-*Note:*
+### 3. Shielding / Rejection
 
-- *If the Yellow Tier Vote is successful, the [Guards](./roles.md#guard) will open a Shielding Vote right after.*
-- *If the Yellow Tier Vote fails, the [Guards](./roles.md#guard) will put the NFT collection directly in to the blacklist!*
-- *If the Yellow Tier Vote doesn't receive the required participation rate, nothing happens and the NFT collection can be proposed to get shielded again after 1 month.*
-- *No matter about the outcome of the Yellow Tier Vote, the NFT collection will receive a Yellow Tier Flag from [Guards](./roles.md#guard) with a text that describes the assumed IP issue or other grey area issue.*
-- *Currently, the Yellow Tier Vote is anonymous, open for 1 week and its result is based on majority of at least 21 participants. In case there are less than 21 participants, the Shielding Process will be considered as a fail and the NFT collection can again be proposed for shielding after a period of 1 month.*
-
-### 3. Shielding Vote
-
-Once a [Guard](./roles.md#guard) opened the Shielding Vote, all [Voters](./roles.md#voter) will have the opportunity to vote for the NFT collection to be shielded.
-
-*Note: The Shielding Vote will be open for exactly 1 week and in order to pass, an NFT collection needs at least 21 upvotes.*
-
-### 4. Activate Shield
-
-If the Shielding Vote has at least 21 supporters within the voting period of 1 week, the shield will be activated on the NFT collection!
+- In case of shielding, a new entry will be added to the [`shielding`](https://explorer.xprnetwork.org/account/nftwatchdao?loadContract=true&tab=Tables&account=nftwatchdao&scope=nftwatchdao&limit=100&table=shielding)-table and the contract will log this action.
+- In case of rejection, the shielding request will be deleted and the rejection will only be logged by the contract.

@@ -8,7 +8,6 @@
     - Public Domain media
 - NFT Collections must NOT be launched on multiple blockchains if they use identical NFTs.
 - All NFT collections must be reasonably respectful. This includes, but is not limited to; explicit pornography, illegal activities, implied threats, racist themes, or any other overtly offensive materials.
-- Any type of revenue stream generated from NFT collections must be documented and properly executed.
 - Phishing schemes are strictly prohibited.
 
 ## How to detect violations?
@@ -19,4 +18,4 @@
 
 ## Violation detected?
 
-If an NFT collection violates this Code of Conduct, every [Scout](./roles.md#scout) is encouraged to report the NFT collection and provide adequate evidence.
+If an NFT collection violates this Code of Conduct, anybody is encouraged to report the NFT collection and provide adequate evidence.

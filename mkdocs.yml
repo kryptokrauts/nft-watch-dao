@@ -44,10 +44,8 @@ markdown_extensions:
 nav:
   - index.md
   - code-of-conduct.md
-  - roles.md
-  - role-assignment.md
-  - shielding.md
   - blacklisting.md
-  - decentralization.md
+  - shielding.md
+  - smart-contract.md
   - faq.md
   - disclaimer.md
