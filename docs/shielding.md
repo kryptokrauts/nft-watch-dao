@@ -10,11 +10,19 @@ By handing out the shield, NFT Watch DAO confirms that an NFT collection:
 *Note: Shielding is only targeting NFT collections, not individual accounts!*
 
 ## Shielding Fee
-As the shielding process requires some effort from the [Guards](guards.md) to perform the Basic Check and to create a report according to the [Report Template](https://docs.google.com/spreadsheets/d/1iSVNuCF7yMAfQfR6yZ1VLHVxWM6PFCtaySH5Nf34rRw/edit#gid=0), NFT Watch DAO charges a fee of currently `12500.0000 XPR` for shielding.
+The shielding fee is introduced for several reasons:
 
-In order to encourage different NFT marketplaces to utilize shielding, the NFT marketplace where the shielding request has been submitted, will also get a small compensation.
+1. Drive Guard interest which will lead to sustainability of the platform
+1. Give back to the community:
+    - Buy SOON SPOT NFTs to promote shielded collections
+    - Host giveaways
+    - ...
+1. Encourage NFT marketplaces to adopt NFT Watch DAO
+1. Provide added friction to scammers
 
-Currently, the fee distribution is defined as follows:
+Currently, NFT Watch DAO charges a fee of `12500.0000 XPR` for shielding.
+
+The fee distribution is defined as follows:
 
 - 50% Guard that performs the review and creats the shielding report
 - 40% NFT Watch DAO

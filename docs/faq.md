@@ -10,7 +10,7 @@ NFT Watch DAO established a governance model where no token is required. Current
 
 ## What is the difference between copy paste scams and knock-off assumptions? Why are they treated differently? How does NFT Watch DAO make the determination?
 
-Copy paste scams are clear blatant rip-offs of other images or NFT collections that have little to no changes.
+Copy/paste scams are clear blatant rip-offs of other images or NFT collections that have little to no changes.
 
 Assumed knock-offs are generally very close to the original source material but are altered to fool investors into thinking it is genuine. NFT Watch DAO check lines, shading, angles and pixel alignment to determine whether or not a project has been ripped off opposed to a knock-off.
 
@@ -41,7 +41,7 @@ Anybody is invited and encouraged to consume the contract information and apply 
 
 The NFT Watch DAO initiative exists longer than Soon.Market and aims to be 100% **independent** of any **marketplace**.
 
-The team behind Soon.Market helped NFT Watch with setting up the right process and implementing a solution which is now 100% decentralized and governed by the NFT Watch DAO.
+The team behind Soon.Market helped NFT Watch DAO with setting up the right process and implementing a solution which is now 100% decentralized and governed by the NFT Watch DAO.
 
 ## How can I become a Guard?
 

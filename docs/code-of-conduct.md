@@ -18,4 +18,4 @@
 
 ## Violation detected?
 
-If an NFT collection violates this Code of Conduct, anybody is encouraged to report the NFT collection and provide adequate evidence.
+If an NFT collection violates this Code of Conduct, every community member is encouraged to report the NFT collection and provide adequate evidence.

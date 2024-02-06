@@ -10,11 +10,11 @@ Any community member can report an NFT collection that potentially violates the 
 
 One of the [Guards](./guards.md) will perform a check on the reported NFT collection:
 
-- If the NFT collection is a clear rip-off, [Guards](./guards.md) will confirm to put the NFT collection on the blacklist.
-- If the NFT collection is assumed to be a knock-off, [Guards](./guards.md) will try to reach out to the creator or the team behind an NFT collection before taking a decision. This applies for NFT collections where IP issues or other controversal grey area issues are assumed.
+- If the NFT collection clearly violates the [Code of Conduct](./code-of-conduct.md) (e.g. copy/paste scheme), [Guards](./guards.md) will confirm to put the NFT collection on the blacklist as soon as possible.
+- If the NFT collection is assumed to be violating the terms, the [Guards](./guards.md) will try to reach out to the creator or the team behind an NFT collection before taking a decision. This applies for NFT collections where IP issues or other controversal grey area issues are assumed.
 - If no violation is detected, the report will be rejected by and no action will be taken.
 
-Learn more about knock-offs in the [FAQ](./faq.md#what-is-the-difference-between-copy-paste-scams-and-knock-off-assumptions-why-are-they-treated-differently-how-does-nft-watch-dao-make-the-determination).
+Learn more about potential scams in the [FAQ](./faq.md#what-is-the-difference-between-copy-paste-scams-and-knock-off-assumptions-why-are-they-treated-differently-how-does-nft-watch-dao-make-the-determination).
 
 
 ### 3. Blacklisting / Rejection
