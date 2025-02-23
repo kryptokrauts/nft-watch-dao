@@ -20,7 +20,7 @@ The shielding fee is introduced for several reasons:
 1. Encourage NFT marketplaces to adopt NFT Watch DAO
 1. Provide added friction to scammers
 
-Currently, NFT Watch DAO charges a fee of `10000.0000 XPR` for shielding.
+Currently, NFT Watch DAO charges a fee of `4000.0000 XPR` for shielding.
 
 The fee distribution is defined as follows:
 
@@ -47,7 +47,7 @@ An NFT collection needs to meet following requirements:
 ### 1. Request Shielding
 
 #### Providing the Shielding Fee
-The exact shielding fee of currently `10000.0000 XPR` needs to be sent by the requester to the nftwatchdao account ***upfront*** with the memo `shielding`.
+The exact shielding fee of currently `4000.0000 XPR` needs to be sent by the requester to the nftwatchdao account ***upfront*** with the memo `shielding`.
 
 *Note: The token transfer action with the memo can be included in the same transaction. An NFT marketplace can propose such transaction accordingly.*
 
